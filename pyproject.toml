@@ -1,0 +1,20 @@
+[project]
+name = "gtfs-rt-scraper"
+version = "0.1.0"
+description = "GTFS realtime scraper"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "dagster>=1.8.13",
+    "dagster-webserver>=1.8.13",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.dagster]
+module_name = "gtfs_pipeline"

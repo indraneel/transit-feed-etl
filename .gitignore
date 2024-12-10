@@ -1,0 +1,43 @@
+# Logs
+data/dagster/compute_logs/
+*.log
+*.err
+*.out
+
+# Database files
+data/
+data/dagster/history/
+data/dagster/schedules/
+data/db/
+*.db
+
+# Parquet files
+data/parquet/
+*.parquet
+*.geoparquet
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environment
+.env
+.venv/
+venv/
+ENV/
+
+# Temporary files
+tmp*/
+.tmp/
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes

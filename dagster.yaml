@@ -1,0 +1,26 @@
+# dagster.yaml
+storage:
+  sqlite:
+    base_dir: /Users/indraneel/Code/gtfs-rt-scraper/data/dagster
+
+compute_logs:
+  module: dagster.core.storage.local_compute_log_manager
+  class: LocalComputeLogManager
+  config:
+    base_dir: /Users/indraneel/Code/gtfs-rt-scraper/data/dagster/compute_logs
+
+local_artifact_storage:
+  module: dagster.core.storage.root
+  class: LocalArtifactStorage
+  config:
+    base_dir: /Users/indraneel/Code/gtfs-rt-scraper/data/dagster/storage
+
+telemetry:
+  enabled: false
+
+schedules:
+  use_threads: true
+
+run_launcher:
+  module: dagster.core.launcher.default_run_launcher
+  class: DefaultRunLauncher
