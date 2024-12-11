@@ -1,5 +1,9 @@
 # GTFS-RT Scraper
 
+![GTFS RT Scraper demo](/demo.gif)
+
+
+
 ## Overview
 
 GTFS-RT => Dagster (runs each minute) => GeoParquet + SQLite
