@@ -2,6 +2,6 @@
 custom_feeds:
   # Example of a custom feed (commented out)
   mta_bus:
-    url: "https://gtfsrt.prod.obanyc.com/vehiclePositions?key=d8772103-6696-4a53-b768-5ecb532fb006"
-    api_token: "d8772103-6696-4a53-b768-5ecb532fb006"  # Optional
+    url: "https://gtfsrt.prod.obanyc.com/vehiclePositions?key="
+    api_token: ""  # Optional
     headers: {}  # Optional additional headers
